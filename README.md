@@ -35,7 +35,7 @@ If you have the important applications maximized it should be fine - most of the
 
 As this is just a web service you will also require a software that actually sends the window geometry to the guest. In AwesomeWM I do it that way:
 
-`
+```lua
 local lookingGlassFilter = function (c)
     return awful.rules.match(c, {class = "looking-glass-client"})
 end
@@ -57,6 +57,6 @@ end
 clientkeys = mytable.join(
     awful.key({modkey}, "o", resizeLookingGlassWindow, {description = "Test resize", group = "launcher"}), 
 ...
-`
+```
 
 With other wms/dms you need to write a script or use something existing. Pretty sure those things exist.
