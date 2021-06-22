@@ -31,6 +31,9 @@ Windows sometimes behaves weirdly on resolution changes, shrinking and moving wi
 
 If you have the important applications maximized it should be fine - most of the time. 
 
+![demo](mr_resolution.gif)
+
+
 # Usage
 
 As this is just a web service you will also require a software that actually sends the window geometry to the guest. In AwesomeWM I do it that way:
@@ -59,4 +62,4 @@ clientkeys = mytable.join(
 ...
 ```
 
-With other wms/dms you need to write a script or use something existing. Pretty sure those things exist.
+With other wms/dms you need to write a script or use something existing.
